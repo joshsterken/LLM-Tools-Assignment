@@ -1,115 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dallas Mavericks Fan Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #0053B8; /* Mavericks blue */
-            color: white;
-        }
-        header {
-            background: #00285E; /* darker blue */
-            padding: 10px 20px;
-            text-align: center;
-        }
-        header nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        header nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 20px;
-            background-color: #97CEEC; /* light blue */
-            color: #00285E; /* dark blue */
-        }
-        footer {
-            background-color: #00285E;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .form-container {
-            background: white;
-            color: black;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .form-container h2 {
-            color: #00285E;
-        }
-        input, textarea {
-            width: calc(100% - 22px);
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            background-color: #007DC5; /* button blue */
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dallas Mavericks Fan Site</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #1D428A;
+        background: #0C2340;
+    }
+    header {
+        background: #0053BC;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header img {
+        height: 50px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .content {
+        display: flex;
+        padding: 20px;
+    }
+    .main {
+        flex: 3;
+        margin-right: 20px;
+    }
+    .sidebar {
+        flex: 1;
+        background: #1D428A;
+        color: white;
+        padding: 10px;
+    }
+    .footer {
+        background: #162F65;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .minimalistic {
+        border: none;
+        padding: 10px;
+        background: #707070;
+        color: white;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Dallas Mavericks Fan Site</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#merchandise">Merchandise</a>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Welcome Mavericks Fans!</h2>
-            <p>Get all your latest Mavericks updates and merchandise right here.</p>
-            <img src="mavs-logo.png" alt="Mavericks Logo" style="width: 100px; height: auto;">
+<header>
+    <img src="path_to_logo.png" alt="Dallas Mavericks Logo">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Navigation</a>
+        <a href="#">Merchandise</a>
+    </nav>
+</header>
+<div class="content">
+    <div class="main">
+        <h1>Welcome to the Dallas Mavericks Fan Site!</h1>
+        <p>Here you'll find all things Mavericks. Stay tuned for updates, player stats, game highlights, and more.</p>
+        <section class="blog">
+            <h2>Blog Section</h2>
+            <article>
+                <h3>Latest Game Analysis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
         </section>
-        <section id="news">
-            <h2>Latest News</h2>
-            <p>Stay updated with the latest news about the Dallas Mavericks.</p>
-        </section>
-        <section id="merchandise">
-            <h2>Mavericks Merchandise</h2>
-            <p>Explore our exclusive range of merchandise to show your Mavericks pride.</p>
-        </section>
-        <div class="form-container">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-                <button type="button" onclick="submitForm()">Submit</button>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Dallas Mavericks Fan Site</p>
-    </footer>
-    <script>
-        function submitForm() {
-            alert("Thank you for contacting us!");
-        }
-    </script>
+    </div>
+    <aside class="sidebar">
+        <h2>Scores & News</h2>
+        <p>Mavericks 102 - 98 Lakers</p>
+        <p>Latest news here...</p>
+    </aside>
+</div>
+<footer class="footer">
+    © 2024 Dallas Mavericks Fan Site
+</footer>
+<script>
+    console.log("Welcome to the Dallas Mavericks Fan Site!");
+</script>
 </body>
 </html>
